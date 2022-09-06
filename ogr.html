@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ogr</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        body{
+            padding: 100px;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active "  aria-current="page" href="ogr.html">Öğrenci Kayıt</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="dersler.html">Dersler</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="kulupler.html">Kulüpler</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <h1 class="container text-center">
+        Öğrenci Kayıt Ekranı
+    </h1>
+    <hr>
+    <form>
+        <div class="row">
+          <div class="col ">
+            <label for="ad" >Öğrenci Adı</label>
+            <input type="text" class="form-control" placeholder="Adınız" name="ad" required>
+          </div>
+          <div class="col ">
+            <label for="soyad">Öğrenci Soyadı</label>
+            <input type="text" class="form-control" placeholder="Soyadınız" name="soyad"required>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col">
+              <label for="ogrno">Öğrenci Numarası</label>
+              <input type="number" class="form-control" placeholder="ör:123456" name="ogrno" required>
+            </div>
+            <div class="col">
+              <!--<div>
+                <span class="input-group-text">xxx</span>
+                <input type="number" class="form-control" aria-label="ülke kodu">
+                <input type="number" class="form-control" aria-label="şehir kodu">
+                <input type="number" class="form-control" aria-label="tel no">
+              </div>.............. -->
+              <label for="telno">Öğrenci Telefonu</label>
+              <div class="input-group mb-3">
+                <span class="input-group-text">+90</span>
+                <input type="number" class="form-control " placeholder="Alan Adı" aria-label="alanad">                
+                <input type="number" class="form-control" placeholder="Tel No" aria-label="telno">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <label for="dt">Doğum Tarihi</label>
+              <input type="date" class="form-control"  name="dt"required>
+            </div>
+            <div class="col">
+              <label for="mail">E-posta</label>
+              <input type="email" class="form-control"  name="mail" required>
+            </div>
+          </div>
+          <div class="accordion my-4" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Nufus Kayıt Bilgileri
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="heading" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="row">
+                      <div class="col col-md-4">
+                        <label for="tc">TC Kimlik Numarası</label>
+                        <input type="number" class="form-control" placeholder="XXXXXXXXXXX" name="tc">
+                      </div>
+                      <div class="col col-md-4">
+                        <label for="dtrh">Doğum Tarihi</label>
+                        <input type="date" class="form-control"  name="dtrh">
+                      </div>
+                      <div class="col col-md-4">
+                        <label for="dyr">Doğum Yeri</label>
+                        <input type="text" class="form-control"  name="dyr">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col col-md-6>
+                        <label for="annead">Anne Adı</label>
+                        <input type="text" class="form-control"  name="annead">
+                      </div>
+                      <div class="col col-md-6">
+                        <label for="babaad">Baba Adı</label>
+                        <input type="text" class="form-control"  name="babaad">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col col-md-4">
+                        <label for="serino">Seri NO</label>
+                        <input type="number" class="form-control" name="serino">
+                      </div>
+                      <div class="col col-md-4">
+                        <label for="uyrugu">Uyruğu</label>
+                        <input type="text" class="form-control"  name="uyrugu">
+                      </div>
+                      <div class="col col-md-4">
+                        <label for="songt">Son Geçerlilik Tarihi</label>
+                        <input type="date" class="form-control"  name="songt">
+                      </div>
+                    </div>
+                    TC Kimlik No, Anne Adı, Baba Adı,d tarihi, d yeri, seri no,uyruğu, son geçerlilik tarihi, 
+                  </div>
+                </div>
+              </div>                      
+          </div>
+          <div class="row">
+            <label for="cnsyt">Cinsiyet</label>
+            <div class="custom-control custom-radio custom-control-inline col col-md-2">
+                <input type="radio" id="customRadioInline1" name="cnsyt" class="custom-control-input">
+                <label class="custom-control-label" for="customRadioInline1">Erkek</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline col col-md-2">
+                <input type="radio" id="customRadioInline2" name="cnsyt" class="custom-control-input">
+                <label class="custom-control-label" for="customRadioInline2">Kadın</label>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col">
+                <label for="inputState">Şehir</label>
+                <select id="inputState" class="form-control form-select" required>
+                  <option selected>Seçiniz</option>
+                  <option value="1">Erzurum</option>
+                  <option value="2">Trabzon</option>
+                  <option value="3">İstanbul</option>
+                </select>
+            </div>
+            <div class="col">
+              <label for="pkod">Posta Kodu</label>
+              <input type="number" class="form-control" placeholder="ör:11111" name="pkod" required>
+            </div>
+          </div>
+          <div >
+            <label for="inputAddress">Adres</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="mah. cad. apt. no. ilçe/il" required>
+          </div>
+          <div class="row">
+            <div class="col col-md-6">
+                <label for="fakulte">Fakülte</label>
+                <select id="fakulte" class="form-control form-select" required>
+                <option selected>Seçiniz</option>
+                <option>Mühendislik</option>
+                <option>Fen Edebiyat </option>
+                <option>Eğitim</option>
+              </select>
+            </div>
+            <div class="col col-md-4">
+              <label for="bolum">Bölüm</label>
+              <select id="bolum" class="form-control form-select" required>
+                <option selected>Seçiniz</option>
+                <option value="1">Bilgisayar Mühendisliği</option>
+                <option value="2">Elektrik Mühendisliği</option>
+                <option value="3">Elektronik Mühendisliği</option>
+              </select>
+            </div>
+            <div class="col col-md-2">
+                <label for="snf">Sınıf</label>
+                <input type="number" class="form-control" placeholder="sınıf" name="snf" required>
+            </div>
+          </div>
+          <br><br>
+          <button type="submit" class="btn btn-primary">Kaydet</button>
+
+
+      </form>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+</body>
+</html>

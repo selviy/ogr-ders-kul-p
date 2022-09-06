@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>kulupler</title>
+    <style>
+      body{
+        padding: 100px;
+      }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg " style="background-color: yellow;">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="ogr.html">Öğrenci Kayıt</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="dersler.html">Dersler</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="kulupler.html">Kulüpler</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <h1 class="container text-center">KULÜPLER</h1><br>
+      <div>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Öğrenci Adı</th>
+              <th scope="col">Görevi</th>
+              <th scope="col">Giriş Tarihi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Ali</td>
+              <td>Bilgisayar Topluluğu/Yönetici</td>
+              <td>03.05.2015</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Ayşe</td>
+              <td>Sosyal Destek Kulübü/Yardımcı</td>
+              <td>25.11.2014</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Mustafa</td>
+              <td>Ar-Ge Topluluğu/Yazıcı</td>
+              <td>05.12.2013</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Ahmet</td>
+              <td>İşletme Topluluğu/Yönetici</td>
+              <td>10.03.2017</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>Zehra</td>
+              <td>İzcilik Kulübü/Üye</td>
+              <td>05.02.2009</td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td>Esra</td>
+              <td>Ar-Ge Topluluğu/Üye</td>
+              <td>01.07.2018</td>
+            </tr>
+                       
+          </tbody>
+        </table>
+      </div><br><br>
+
+      <div><!-- buton -->
+        <button type="button" class="btn btn-warning mt-3" data-bs-toggle="modal" data-bs-target="#kekle">
+          Kulüp Ekle
+        </button>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="kekle" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Kulüp Ekle</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">        
+                <div class="row">
+                  <div class="col">
+                    <label for="ad">Adı</label>
+                    <input type="text" class="form-control"  name="ad">
+                  </div>
+                  <div class="col">
+                    <label for="gorev">Görevi</label>
+                    <input type="text" class="form-control"  name="gorev">
+                  </div>
+                  <div class="col">
+                    <label for="gt">Giriş Tarihi</label>
+                    <input type="date" class="form-control"  name="gt">
+                  </div>
+          
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Kapat</button>
+                <button type="button" class="btn btn-success">Kaydet</button>
+              </div>
+            </div>
+          </div>
+        </div><br>
+      </div><br><br>
+      <div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Bilgisayar Topluluğu</h5>
+            <p class="card-text">Bilgisayar Topluluğu 1989 yılında kurulmuş bir öğrenci topluluğudur. Topluluğumuz yaptığı çalışmalar, geliştirdiği ve geliştirmekte olduğu projeler ve düzenlediği etkinliklerle sosyal, çağdaş ve alanında öncü bir topluluk olup çalışmaları ülke genelinde örnek gösterilmektedir.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Sosyal Destek Kulübü</h5>
+            <p class="card-text">Ülkemizin görece sınırlı olanaklarla eğitimden pay almaya çalışan özellikle köy çocuklarına okuma heyecanı ve eğitimini daha ileri düzeyde sürdürme motivasyonu kazandırmak ve eğitimlerine katkıda bulunmak için hiçbir politik kaygı taşımadan, insanların eşit olduğu ilkesinden yola çıkarak ve bunun borcumuz olduğunu bilerek etkinlikler gerçekleştirmektedir. Gönülden, severek, karşılık beklemeden, bizim gibi ol demeden, sadece borcumuzu ödeyebilmek için gönüllüyüz.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Ar-Ge Topluluğu</h5>
+            <p class="card-text">Girişimcilik ve inovasyon alanında Türkiye’nin öncü öğrenci topluluğudur. 30’dan fazla üniversitede etkin girişimcilik programlarının yönetimini de üstlenen Ar-Ge Topluluğu, bu üniversitelerde öğrencilerin dünyayı radikal bir şekilde değiştirebilecek girişimler üretmelerine zemin hazırlamakta, liderlik ve iletişim becerilerini geliştirmelerine katkı sağlamaktadır.</p>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">İşletme Topluluğu</h5>
+            <p class="card-text"><strong>Etkinlik</strong><br>
+              Türkiye'nin dört bir yanına etki eden prestijli etkinlikler düzenliyor, tüm çalışmalarımızda gerçek tecrübeler ediniyoruz. <br>
+              <strong>Network</strong>
+              İş ortaklarımız, üyelerimiz, katılımcılarımız, şirket yöneticileri ve tüm paydaşlarımızla güçlü bağlar kuruyoruz.
+              <br>
+              Kariyer
+              Farklı alanları ve iş birimlerini deneyimleyerek kendi potansiyelimizi keşfediyor, kariyer planlamamızı kolaylaştırıyoruz.
+              <br>
+              <strong>Eğitim</strong><br>
+              Güncel teknolojiler, sektörel çalışmalar, kişisel gelişim ve farklı alanlarda eğitimlerle kendimizi geliştiriyoruz.
+              <br>
+              <strong>Organizasyon</strong><br>
+              Tanışmaya, gezmeye, eğlenmeye her zaman vakit ayırıyor, ömür boyu sürecek dostluklar kuruyoruz.
+              <br>
+              <strong>Sosyal Sorumluluk</strong><br>
+              Çevremize, ülkemize ve dünyamıza karşı sorumluluklarımızı biliyor, tüm ekosisteme katkı sağlamayı amaçlıyoruz.</p>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">İzcilik Kulübü</h5>
+            <p class="card-text">Kuruluşundan bu yana yaptığı birçok etkinlikle kendini tanıtan, doğaya ve topluma karşı sorumluluk sahibi duruşuyla bilinen bir topluluktur. Üyelerinin fiziksel, sosyal, duygusal ve karakter gelişimlerini, doğaya bakış açılarını geliştirmelerine katkıda bulunmaktadır.</p>
+          </div>
+        </div>
+      </div>
+      <!-- ............. -->
+      <!-- Button trigger modal -->
+
+      <!-- ............. -->
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
+</body>
+</html>
